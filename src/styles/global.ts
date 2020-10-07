@@ -15,6 +15,12 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  h1, h2, h3, h4, h5, hanging-punctuation, strong {
+    font-weight: 500;
+    cursor: pointer;
   }
 `;
