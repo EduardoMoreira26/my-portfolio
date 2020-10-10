@@ -10,13 +10,9 @@ export const Container = styled.header`
     justify-content: space-between;
     align-items: center;
 
-
     button {
-
-    }
-
-    nav {
-
+      text-decoration: none;
+      border: none;
     }
   }
 `;
@@ -39,9 +35,7 @@ export const Modal = styled.div`
 `;
 
 export const ModalArea = styled.div`
-
   padding: 10px;
-
 
   div {
     max-width: 400px;
@@ -55,11 +49,16 @@ export const ModalArea = styled.div`
         color: #81c043;
       }
     }
-
-
-
   }
 
+      svg {
+      font-size: 22px;
+      margin: 0 10px;
+      transition: color 0.2s;
 
 
+      &:hover {
+          color: #81c043;
+        }
+  }
 `;
