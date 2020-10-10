@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom'
 
-import { Container } from './styles';
+import { FiMenu } from 'react-icons/fi';
 
-const Header: React.FC = () => (
+import { Container, Modal, ModalArea } from './styles';
 
-  <Container>
-    <header>
-      <h1>Eduardo Moreira</h1>
+const Header: React.FC = () => {
+  const [visible, setVisible] = useState(false);
 
-      <nav>
-        <a href="/">GitHub</a>
-        <a href="/">LinkdIn</a>
-        <a href="/">Blog</a>
-      </nav>
+  return (
+    <Container>
+      <header>
+        <h1>Eduardo Moreira</h1>
 
-    </header>
-  </Container>
-);
+        <button>Abrir Modal</button>
+
+        <Modal>
+
+          <ModalArea>
+
+            <div><strong>Projetos</strong></div>
+            <div><strong>Cursos</strong> </div>
+            <div><strong>Blog</strong></div>
+            <div><strong>Contato</strong> </div>
+
+          </ModalArea>
+
+        </Modal>
+
+
+
+
+
+      </header>
+    </Container>
+  );
+};
 
 export default Header;
