@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-
-import { FiMenu, FiLinkedin, FiGithub } from 'react-icons/fi';
+import { Sling as Hamburger } from 'hamburger-react'
 
 import { Container, Modal, ModalArea } from './styles';
 
@@ -21,21 +20,16 @@ const Header: React.FC = () => {
       <header>
         <h1>Eduardo Moreira</h1>
 
-        <button onClick={handleButtonClick}><FiMenu /></button>
+        <button onClick={handleButtonClick}><Hamburger color="#fff" toggled={visible} toggle={setVisible} /></button>
 
         {visible &&
           <Modal onClick={handleModalClick}>
             <ModalArea>
-              <div><strong>Projetos</strong></div>
-              <div><strong>Cursos</strong> </div>
-              <div><strong>Blog</strong></div>
-              <div><strong>Contato</strong> </div>
+              <a href="/projetos"><div><strong>Projetos</strong></div></a>
+              <a href="/cursos"><div><strong>Cursos</strong></div></a>
+              <a href="/blog"><div><strong>Blog</strong></div></a>
+              <a href="/contato"><div><strong>Contato</strong></div></a>
 
-              <div>
-                <a href="https://www.linkedin.com/in/eduardo-moreira-944413151/" target="blank"><FiLinkedin /></a>
-
-                <a href="https://github.com/EduardoMoreira26" target="blank"><FiGithub /></a>
-              </div>
             </ModalArea>
           </Modal>
         }
@@ -45,7 +39,7 @@ const Header: React.FC = () => {
 
 
       </header>
-    </Container>
+    </Container >
   );
 };
 

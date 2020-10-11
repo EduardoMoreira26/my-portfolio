@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const Container = styled.header`
   padding: 20px 0;
 
@@ -13,6 +14,7 @@ export const Container = styled.header`
     button {
       text-decoration: none;
       border: none;
+      background-color: transparent;
     }
   }
 `;
@@ -36,29 +38,48 @@ export const Modal = styled.div`
 
 export const ModalArea = styled.div`
   padding: 10px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  div {
-    max-width: 400px;
-    margin: 40px;
+  a {
+    text-decoration: none;
+    color: #fff;
 
-    strong {
-      font-size: 48px;
-      transition: color 0.2s;
+    transition: transform 0.2s;
 
-      &:hover {
-        color: #81c043;
-      }
+    &:hover {
+      transform: translatey(-10px)
     }
-  }
-
-      svg {
-      font-size: 22px;
-      margin: 0 10px;
-      transition: color 0.2s;
 
 
-      &:hover {
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 300px;
+        border: 1px solid #0f1014;
+        text-align: center;
+        transition: border-color 0.2s;
+        border-radius: 5px;
+
+
+        &:hover {
+          border-color: #81c043;
+        }
+
+
+      strong {
+        font-size: 48px;
+        transition: color 0.2s;
+
+        &:hover {
           color: #81c043;
         }
+      }
   }
+  }
+
 `;
