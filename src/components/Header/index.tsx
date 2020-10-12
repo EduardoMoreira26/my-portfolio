@@ -20,7 +20,7 @@ const Header: React.FC = () => {
       <header>
         <h1>Eduardo Moreira</h1>
 
-        <button onClick={handleButtonClick}><Hamburger color="#fff" toggled={visible} toggle={setVisible} /></button>
+        <button onClick={handleButtonClick}><Hamburger color="#81c043" duration={0.5} toggled={visible} toggle={setVisible} /></button>
 
         {visible &&
           <Modal onClick={handleModalClick}>

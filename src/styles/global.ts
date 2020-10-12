@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import background from '../assets/background.png';
+
 export default createGlobalStyle`
   *{
     margin: 0;
@@ -9,8 +11,9 @@ export default createGlobalStyle`
   }
 
   body {
-    /* background: #0f1014; */
-    background: #000;
+    background: #121214;
+    /* background: url(${background}) no-repeat center;
+    background-size: cover; */
     color: #fff;
     -webkit-font-smoothing: antialiased;
   }
@@ -22,6 +25,5 @@ export default createGlobalStyle`
 
   h1, h2, h3, h4, h5, hanging-punctuation, strong {
     font-weight: 500;
-    cursor: pointer;
   }
 `;

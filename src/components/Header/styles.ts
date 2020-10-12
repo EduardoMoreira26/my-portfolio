@@ -5,9 +5,10 @@ export const Container = styled.header`
   padding: 20px 0;
 
   header {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -38,8 +39,9 @@ export const Modal = styled.div`
 
 export const ModalArea = styled.div`
   padding: 10px;
-  max-width: 200px;
+  max-width: 800px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -50,7 +52,8 @@ export const ModalArea = styled.div`
     transition: transform 0.2s;
 
     &:hover {
-      transform: translatey(-10px)
+      transform: translatey(-10px);
+
     }
 
 
@@ -64,10 +67,12 @@ export const ModalArea = styled.div`
         text-align: center;
         transition: border-color 0.2s;
         border-radius: 5px;
+        margin: 4px 4px;
+
 
 
         &:hover {
-          border-color: #81c043;
+          border: 3px solid #81c043;
         }
 
 
