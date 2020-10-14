@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Container, Content } from './styles';
+import { Container, Content, Modal, ModalArea } from './styles';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -8,6 +8,15 @@ import Footer from '../../components/Footer';
 import background from '../../assets/background.png';
 
 const Main: React.FC = () => {
+  const [visible, setVisible] = useState(false);
+
+  const handleModal = () => {
+    setVisible(true);
+  }
+
+  const handleModalClick = () => {
+    setVisible(false);
+  }
 
   return (
 
@@ -25,54 +34,116 @@ const Main: React.FC = () => {
 
         <section className="projects_container">
           <div className="background-card">
-            <div className="card">
-              <img src={background} alt="" />
-              <strong>HTML & CSS</strong>
 
+            <button
+              onClick={handleModal}
+              className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
 
-            </div>
-            <div className="card">
-              <img src={background} alt="" />
-              <strong>HTML & CSS</strong>
+            {visible &&
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
+                  <div>
+                    <h1>OLX CLONE</h1>
+                    <p>Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p>Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p>Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p>Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p>Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p>Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p>Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                  </div>
 
+                </ModalArea>
+              </Modal>
+            }
 
-            </div>
+            <button onClick={handleModal} className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
 
-            <div className="card">
-              <img src={background} alt="" />
-              <strong>HTML & CSS</strong>
+            {visible &&
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
 
+                </ModalArea>
+              </Modal>
+            }
 
+            <button onClick={handleModal} className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
 
-            </div>
-            <div className="card">
-              <img src={background} alt="" />
-              <strong>HTML & CSS</strong>
+            {visible &&
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
 
+                </ModalArea>
+              </Modal>
+            }
 
+            <button onClick={handleModal} className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
 
-            </div>
-            <div className="card">
-              <img src={background} alt="" />
-              <strong>HTML & CSS</strong>
+            {visible &&
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
 
+                </ModalArea>
+              </Modal>
+            }
 
+            <button onClick={handleModal} className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
 
-            </div>
-            <div className="card">
-              <img src={background} alt="" />
+            {visible &&
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
 
-              <strong>HTML & CSS</strong>
+                </ModalArea>
+              </Modal>
+            }
 
+            <button onClick={handleModal} className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
 
-            </div>
+            {visible &&
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
+
+                </ModalArea>
+              </Modal>
+            }
+
           </div>
         </section>
       </Content>
 
       <Footer />
 
-    </Container>
+    </Container >
   );
 }
 

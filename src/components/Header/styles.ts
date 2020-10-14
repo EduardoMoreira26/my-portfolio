@@ -36,7 +36,6 @@ export const Modal = styled.div`
   align-items: center;
   /* height: 425px;
   width: 1150px; */
-
 `;
 
 export const ModalArea = styled.div`
