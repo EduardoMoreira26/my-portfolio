@@ -16,6 +16,8 @@ export const Content = styled.div`
     height: 550px;
     text-align: center;
     padding-top: 200px;
+    color: #e1e1e6;
+
 
     h1 {
       margin-top: 10px;
@@ -32,6 +34,9 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+
+
 
 
   .projects_container {
@@ -53,10 +58,28 @@ export const Content = styled.div`
       .card {
         border-radius: 5px;
         border: 1px solid #121214;
-        height: 350px;
+        height: 400px;
         width: 365px;
         background: #121214;
         margin: 10px;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: translatey(-10px);
+          border: 2px solid #6345;
+        }
+
+        img {
+          width: 363px;
+          height: 300px;
+          margin-bottom: 30px;
+
+        }
+
+        strong {
+          font-size: 24px;
+          color: #e1e1e6;
+        }
 
       }
     }

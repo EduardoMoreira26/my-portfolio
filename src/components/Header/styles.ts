@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   padding: 20px 0;
+  /* position: fixed; */
+  /* width: 100%; */
 
   header {
     max-width: 1200px;
@@ -28,7 +30,7 @@ export const Modal = styled.div`
   right: 0;
   bottom: 0;
   z-index: 90;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,8 +73,10 @@ export const ModalArea = styled.div`
 
 
 
+
         &:hover {
           border: 3px solid #81c043;
+
         }
 
 
