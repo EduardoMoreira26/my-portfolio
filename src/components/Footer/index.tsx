@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+/* eslint no-use-before-define: 0 */
 
+import React, { useState } from "react";
 
-import { FiMenu, FiLinkedin, FiGithub } from 'react-icons/fi';
-import { Container } from './styles';
-
+import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { Container } from "./styles";
 
 const Footer: React.FC = () => {
-
-
   return (
     <Container>
       <footer>
@@ -15,12 +13,18 @@ const Footer: React.FC = () => {
         <strong>Alguns Direitos Reservados</strong>
         <div>
           <div>
-            <a href="https://www.linkedin.com/in/eduardo-moreira-944413151/" target="blank"><FiLinkedin /></a>
+            <a
+              href="https://www.linkedin.com/in/eduardo-moreira-944413151/"
+              target="blank"
+            >
+              <FiLinkedin />
+            </a>
 
-            <a href="https://github.com/EduardoMoreira26" target="blank"><FiGithub /></a>
+            <a href="https://github.com/EduardoMoreira26" target="blank">
+              <FiGithub />
+            </a>
           </div>
         </div>
-
       </footer>
     </Container>
   );

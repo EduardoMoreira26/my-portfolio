@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+/* eslint no-use-before-define: 0 */
 
-import background from '../../assets/background.png';
+import styled from "styled-components";
+
+import background from "../../assets/background.png";
 
 export const Container = styled.div`
   max-width: 100%;
 `;
-
-
 
 export const Content = styled.div`
   button {
@@ -21,14 +21,12 @@ export const Content = styled.div`
     padding-top: 200px;
     color: #e1e1e6;
 
-
     h1 {
       margin-top: 10px;
       font-size: 66px;
       text-align: center;
     }
   }
-
 
   h1 {
     margin: 20px 0;
@@ -52,8 +50,6 @@ export const Content = styled.div`
       background: #1f1f1f;
       padding: 20px;
 
-
-
       .card {
         border-radius: 5px;
         border: 1px solid #121214;
@@ -62,8 +58,6 @@ export const Content = styled.div`
         background: #121214;
         margin: 10px;
         transition: transform 0.2s;
-
-
 
         img {
           width: 360px;
@@ -80,7 +74,6 @@ export const Content = styled.div`
           font-size: 24px;
           color: #e1e1e6;
         }
-
       }
     }
   }
@@ -100,11 +93,32 @@ export const Modal = styled.div`
 `;
 
 export const ModalArea = styled.div`
+  max-width: 100%;
 
-  width: 1600px;
-  height: 700px;
-  background: #345;
+  background: #1f1f1f;
   border-radius: 5px;
 
+  .close-button {
+    display: flex;
+    justify-content: flex-end;
+    transition: color 0.2s;
+    cursor: pointer;
 
+    &:hover {
+      color: #81c043;
+    }
+  }
+
+  .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 400px;
+      height: 400px;
+      margin: 0 20px 10px 10px;
+    }
+  }
 `;

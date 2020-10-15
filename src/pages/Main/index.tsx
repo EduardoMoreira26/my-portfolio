@@ -1,21 +1,20 @@
-import React from 'react';
+/* eslint no-use-before-define: 0 */
 
-import { Container, Content } from './styles';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import React from "react";
+
+import { Container, Content } from "./styles";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Main: React.FC = () => (
   <Container>
-
     <Header />
 
     <Content>
-      <div>
-      </div>
+      <div />
     </Content>
 
     <Footer />
-
   </Container>
 );
 

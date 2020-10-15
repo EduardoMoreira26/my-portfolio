@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+/* eslint no-use-before-define: 0 */
 
+import styled from "styled-components";
 
 export const Container = styled.header`
   padding: 20px 0;
@@ -21,7 +22,6 @@ export const Container = styled.header`
     }
   }
 `;
-
 
 export const Modal = styled.div`
   position: fixed;
@@ -54,30 +54,23 @@ export const ModalArea = styled.div`
 
     &:hover {
       transform: translatey(-10px);
-
     }
 
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      width: 300px;
+      border: 1px solid #0f1014;
+      text-align: center;
+      transition: border-color 0.2s;
+      border-radius: 5px;
+      margin: 4px 4px;
 
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        width: 300px;
-        border: 1px solid #0f1014;
-        text-align: center;
-        transition: border-color 0.2s;
-        border-radius: 5px;
-        margin: 4px 4px;
-
-
-
-
-        &:hover {
-          border: 3px solid #81c043;
-
-        }
-
+      &:hover {
+        border: 3px solid #81c043;
+      }
 
       strong {
         font-size: 48px;
@@ -87,7 +80,6 @@ export const ModalArea = styled.div`
           color: #81c043;
         }
       }
+    }
   }
-  }
-
 `;
