@@ -10,9 +10,7 @@ const Main: React.FC = () => (
   <Container>
     <Header />
 
-    <Content>
-      <div />
-    </Content>
+    <Content />
 
     <Footer />
   </Container>

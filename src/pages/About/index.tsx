@@ -54,8 +54,6 @@ const Main: React.FC = () => {
 
                     <div className="imgs">
                       <img src={background} alt="" />
-                      <img src={background} alt="" />
-                      <img src={background} alt="" />
                     </div>
                     <p>
                       Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd

@@ -1,12 +1,12 @@
-import React from 'react';
+/* eslint-disable no-use-before-define */
 
-import GlobalStyle from './styles/global';
-import Main from './pages/Main';
-import About from './pages/About';
+import React from "react";
 
+import GlobalStyle from "./styles/global";
+import Main from "./pages/Main";
+import About from "./pages/About";
 
 const App: React.FC = () => {
-
   return (
     <>
       <About />
@@ -14,6 +14,6 @@ const App: React.FC = () => {
       <GlobalStyle />
     </>
   );
-}
+};
 
 export default App;

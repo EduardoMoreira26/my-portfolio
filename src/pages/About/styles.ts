@@ -60,7 +60,7 @@ export const Content = styled.div`
         transition: transform 0.2s;
 
         img {
-          width: 360px;
+          width: 358px;
           height: 300px;
           margin-bottom: 20px;
         }
@@ -93,6 +93,7 @@ export const Modal = styled.div`
 `;
 
 export const ModalArea = styled.div`
+  height: 100vh;
   max-width: 100%;
 
   background: #1f1f1f;
@@ -116,9 +117,9 @@ export const ModalArea = styled.div`
     align-items: center;
 
     img {
-      width: 400px;
+      width: 1000px;
       height: 400px;
-      margin: 0 20px 10px 10px;
+      margin: 0 20px 0 10px;
     }
   }
 `;
