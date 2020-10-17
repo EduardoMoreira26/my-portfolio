@@ -58,21 +58,61 @@ const Main: React.FC = () => {
                     <p>
                       Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
                     </p>
+                  </div>
+                </ModalArea>
+              </Modal>
+            )}
+          </div>
+
+          <div className="background-card">
+            <button onClick={handleModal} className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
+
+            {visible && (
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
+                  <div>
+                    <div className="close-button">
+                      <FiXCircle size={44} />
+                    </div>
+                    <h1>OLX CLONE</h1>
+
+                    <div className="imgs">
+                      <img src={background} alt="" />
+                    </div>
                     <p>
                       Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
                     </p>
-                    <p>
-                      Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
-                    </p>
-                    <p>
-                      Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
-                    </p>
-                    <p>
-                      Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
-                    </p>
-                    <p>
-                      Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
-                    </p>
+                  </div>
+                </ModalArea>
+              </Modal>
+            )}
+          </div>
+
+          <div className="background-card">
+            <button onClick={handleModal} className="card">
+              <div className="effect-closed">
+                <img src={background} alt="" />
+                <strong>HTML & CSS</strong>
+              </div>
+            </button>
+
+            {visible && (
+              <Modal onClick={handleModalClick}>
+                <ModalArea>
+                  <div>
+                    <div className="close-button">
+                      <FiXCircle size={44} />
+                    </div>
+                    <h1>OLX CLONE</h1>
+
+                    <div className="imgs">
+                      <img src={background} alt="" />
+                    </div>
                     <p>
                       Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
                     </p>
