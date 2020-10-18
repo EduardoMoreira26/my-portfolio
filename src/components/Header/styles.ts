@@ -30,7 +30,7 @@ export const Modal = styled.div`
   right: 0;
   bottom: 0;
   z-index: 90;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: center;
   align-items: center;

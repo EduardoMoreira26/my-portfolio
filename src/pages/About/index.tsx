@@ -57,31 +57,20 @@ const Main: React.FC = () => {
                   </div>
 
                   <div className="description">
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
-                    <p>asdasdas</p>
+                    <p>
+                      Projeto criado com principal objetivo de colocar em
+                      prática todo o conhecimento adquirido no curso da
+                      plataforma B7WEB, onde foi abordado todos os conceitos da
+                      biblioteca React. Onde foi criado o clone da aplicação
+                      OLX, através de uma SPA.
+                    </p>
+                    <br />
+                    <a
+                      href="https://github.com/EduardoMoreira26/FrontEnd-OLX"
+                      target="blank"
+                    >
+                      Repositório GitHub
+                    </a>
                   </div>
                 </ModalArea>
               </Modal>

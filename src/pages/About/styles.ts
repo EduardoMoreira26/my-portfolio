@@ -25,6 +25,16 @@ export const ModalArea = styled.div`
   height: 90vh;
   width: 1190px;
   overflow-y: auto;
+  padding: 20px;
+
+  a {
+    text-decoration: none;
+    color: #e1e1e6;
+
+    &:hover {
+      color: #81c043;
+    }
+  }
 
   ::-webkit-scrollbar {
     width: 10px;
@@ -43,7 +53,12 @@ export const ModalArea = styled.div`
   border-radius: 5px;
 
   .description {
-    border: 1px solid #fff;
+    width: 900px;
+    margin: 0 auto;
+
+    p {
+      line-height: 30px;
+    }
   }
 
   .close-button {
@@ -64,7 +79,7 @@ export const ModalArea = styled.div`
     align-items: center;
 
     img {
-      width: 600px;
+      width: 900px;
       height: 400px;
       padding: 10px;
     }
@@ -144,7 +159,7 @@ export const Content = styled.div`
 
         p {
           color: #5f5f5f;
-          font-size: 24px;
+          font-size: 18px;
           font-weight: 500;
         }
       }
