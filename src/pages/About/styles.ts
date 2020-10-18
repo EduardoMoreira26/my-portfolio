@@ -23,10 +23,28 @@ export const Modal = styled.div`
 
 export const ModalArea = styled.div`
   height: 90vh;
-  max-width: 100%;
+  width: 1190px;
+  overflow-y: auto;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #121214;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0 0 2px #81c043;
+  }
 
   background: #1f1f1f;
   border-radius: 5px;
+
+  .description {
+    border: 1px solid #fff;
+  }
 
   .close-button {
     display: flex;
@@ -47,7 +65,7 @@ export const ModalArea = styled.div`
 
     img {
       width: 600px;
-      height: 300px;
+      height: 400px;
       padding: 10px;
     }
   }
@@ -111,7 +129,7 @@ export const Content = styled.div`
         img {
           width: 345px;
           height: 300px;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
 
         &:hover {
@@ -122,6 +140,12 @@ export const Content = styled.div`
         strong {
           font-size: 24px;
           color: #e1e1e6;
+        }
+
+        p {
+          color: #5f5f5f;
+          font-size: 24px;
+          font-weight: 500;
         }
       }
     }

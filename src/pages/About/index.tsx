@@ -39,83 +39,49 @@ const Main: React.FC = () => {
             <button onClick={handleModal} className="card">
               <div className="effect-closed">
                 <img src={background} alt="" />
-                <strong>HTML & CSS</strong>
+                <strong>OLX Clone</strong>
+                <p>ReactJs</p>
               </div>
             </button>
 
             {visible && (
               <Modal onClick={handleModalClick}>
                 <ModalArea>
-                  <div>
-                    <div className="close-button">
-                      <FiXCircle size={44} />
-                    </div>
-                    <h1>OLX CLONE</h1>
-
-                    <div className="imgs">
-                      <img src={background} alt="" />
-                    </div>
-                    <p>
-                      Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
-                    </p>
+                  <div className="close-button">
+                    <FiXCircle size={44} />
                   </div>
-                </ModalArea>
-              </Modal>
-            )}
-          </div>
+                  <h1>OLX CLONE</h1>
 
-          <div className="background-card">
-            <button onClick={handleModal} className="card">
-              <div className="effect-closed">
-                <img src={background} alt="" />
-                <strong>HTML & CSS</strong>
-              </div>
-            </button>
-
-            {visible && (
-              <Modal onClick={handleModalClick}>
-                <ModalArea>
-                  <div>
-                    <div className="close-button">
-                      <FiXCircle size={44} />
-                    </div>
-                    <h1>OLX CLONE</h1>
-
-                    <div className="imgs">
-                      <img src={background} alt="" />
-                    </div>
-                    <p>
-                      Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
-                    </p>
+                  <div className="imgs">
+                    <img src={background} alt="" />
                   </div>
-                </ModalArea>
-              </Modal>
-            )}
-          </div>
 
-          <div className="background-card">
-            <button onClick={handleModal} className="card">
-              <div className="effect-closed">
-                <img src={background} alt="" />
-                <strong>HTML & CSS</strong>
-              </div>
-            </button>
-
-            {visible && (
-              <Modal onClick={handleModalClick}>
-                <ModalArea>
-                  <div>
-                    <div className="close-button">
-                      <FiXCircle size={44} />
-                    </div>
-                    <h1>OLX CLONE</h1>
-
-                    <div className="imgs">
-                      <img src={background} alt="" />
-                    </div>
-                    <p>
-                      Manfnsaddddddddddddddddddddddddddddddddddddddddddddddd
-                    </p>
+                  <div className="description">
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
+                    <p>asdasdas</p>
                   </div>
                 </ModalArea>
               </Modal>
