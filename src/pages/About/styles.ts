@@ -29,10 +29,11 @@ export const ModalArea = styled.div`
 
   a {
     text-decoration: none;
-    color: #e1e1e6;
+    color: #81c043;
+    transition: color 0.2s;
 
     &:hover {
-      color: #81c043;
+      color: #6ba036;
     }
   }
 
@@ -82,6 +83,7 @@ export const ModalArea = styled.div`
       width: 900px;
       height: 400px;
       padding: 10px;
+      border-radius: 2px;
     }
   }
 `;
@@ -145,6 +147,7 @@ export const Content = styled.div`
           width: 345px;
           height: 300px;
           margin-bottom: 10px;
+          border-radius: 2px;
         }
 
         &:hover {

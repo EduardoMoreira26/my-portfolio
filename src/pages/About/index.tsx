@@ -10,6 +10,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import background from "../../assets/background.png";
+import olxbg2 from "../../assets/olxbg2.png";
+import olxcard from "../../assets/olxcard.png";
 
 const Main: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -38,7 +40,7 @@ const Main: React.FC = () => {
           <div className="background-card">
             <button onClick={handleModal} className="card">
               <div className="effect-closed">
-                <img src={background} alt="" />
+                <img src={olxcard} alt="" />
                 <strong>OLX Clone</strong>
                 <p>ReactJs</p>
               </div>
@@ -53,7 +55,7 @@ const Main: React.FC = () => {
                   <h1>OLX CLONE</h1>
 
                   <div className="imgs">
-                    <img src={background} alt="" />
+                    <img src={olxbg2} alt="Olx" />
                   </div>
 
                   <div className="description">
