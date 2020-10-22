@@ -93,6 +93,11 @@ export const Content = styled.div`
     cursor: pointer;
   }
 
+  .img_skills {
+    height: 120px;
+    width: 120px;
+  }
+
   .intro {
     background: url(${background}) no-repeat center;
     background-size: cover;
@@ -165,6 +170,37 @@ export const Content = styled.div`
           font-size: 18px;
           font-weight: 500;
         }
+      }
+    }
+  }
+
+  .skills_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    strong {
+      color: #5f5f5f;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 40px 0;
+
+      h2 {
+        color: #5f5f5f;
+        margin: 20px 0;
+      }
+
+      p {
+        color: #e1e1e6;
+        line-height: 25px;
       }
     }
   }
