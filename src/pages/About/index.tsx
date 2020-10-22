@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint no-use-before-define: 0 */
-import React, { HtmlHTMLAttributes, ImgHTMLAttributes, useState } from "react";
+import React, { useState } from "react";
 
 import { FiXCircle } from "react-icons/fi";
 import { Container, Content, Modal, ModalArea } from "./styles";
@@ -16,7 +16,8 @@ import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import js from "../../assets/js.png";
 import bootstrap from "../../assets/bootstrap.png";
-import reactjs from "../../assets/reactjs.png";
+import react from "../../assets/react.png";
+import node from "../../assets/node.png";
 
 const Main: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -40,7 +41,9 @@ const Main: React.FC = () => {
         </div>
 
         <h1>PROJETOS</h1>
-        <strong>Projetos que me orgulho</strong>
+        <strong>
+          Projetos criados ao longo dos meus estudos e que me orgulho.
+        </strong>
 
         <section className="projects_container">
           <div className="background-card">
@@ -89,69 +92,54 @@ const Main: React.FC = () => {
         <section className="skills_section">
           <h1>SKILLS</h1>
           <strong>
-            Aqui está minha tech favorita, linguagens e frameworks que uso nos
-            meus projetos.
+            Aqui está minha tech favorita, linguagens e frameworks que estudo e
+            uso nos meus projetos.
           </strong>
+
           <div className="skills">
             <Card>
               <img className="img_skills" src={html} alt="Html5" />
               <h2>HTML5</h2>
-              <p>Linguagem de marcação</p>
             </Card>
 
             <Card>
               <img className="img_skills" src={css} alt="" />
               <h2>CSS3</h2>
-              <p>
-                Projeto criado com principal objetivo de colocar em prática todo
-                o conhecimento adquirido no curso da plataforma B7WEB, onde foi
-                abordado todos os conceitos da biblioteca React. Onde foi criado
-                o clone da aplicação OLX, através de uma SPA.
-              </p>
             </Card>
 
             <Card>
               <img className="img_skills" src={js} alt="" />
               <h2>Javascript</h2>
-              <p>
-                Projeto criado com principal objetivo de colocar em prática todo
-                o conhecimento adquirido no curso da plataforma B7WEB, onde foi
-                abordado todos os conceitos da biblioteca React. Onde foi criado
-                o clone da aplicação OLX, através de uma SPA.
-              </p>
             </Card>
 
             <Card>
-              <img className="img_skills" src={reactjs} alt="" />
+              <img className="img_skills" src={react} alt="" />
               <h2>React</h2>
-              <p>
-                Projeto criado com principal objetivo de colocar em prática todo
-                o conhecimento adquirido no curso da plataforma B7WEB, onde foi
-                abordado todos os conceitos da biblioteca React. Onde foi criado
-                o clone da aplicação OLX, através de uma SPA.
-              </p>
             </Card>
 
             <Card>
-              <img className="img_skills" src={reactjs} alt="" />
+              <img className="img_skills" src={react} alt="" />
               <h2>ReactNative</h2>
-              <p>
-                Projeto criado com principal objetivo de colocar em prática todo
-                o conhecimento adquirido no curso da plataforma B7WEB, onde foi
-                abordado todos os conceitos da biblioteca React. Onde foi criado
-                o clone da aplicação OLX, através de uma SPA.
-              </p>
             </Card>
 
             <Card>
               <img className="img_skills" src={bootstrap} alt="" />
               <h2>Bootstrap</h2>
-              <p>
-                Projeto criado com principal objetivo de colocar em prática todo
-                o conhecimento adquirido no curso da plataforma B7WEB, onde foi
-                abordado todos os conceitos da biblioteca React. Onde foi criado
-                o clone da aplicação OLX, através de uma SPA.
-              </p>
+            </Card>
+
+            <Card>
+              <img className="img_skills" src={node} alt="" />
+              <h2>Node</h2>
+            </Card>
+
+            <Card>
+              <img className="img_skills" src={bootstrap} alt="" />
+              <h2>Express</h2>
+            </Card>
+
+            <Card>
+              <img className="img_skills" src={bootstrap} alt="" />
+              <h2>Docker</h2>
             </Card>
           </div>
         </section>

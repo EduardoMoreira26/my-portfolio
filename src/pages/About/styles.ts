@@ -121,6 +121,15 @@ export const Content = styled.div`
     justify-content: center;
   }
 
+  strong {
+    color: #5f5f5f;
+    font-style: italic;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .projects_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -191,7 +200,7 @@ export const Content = styled.div`
       align-items: center;
       flex-wrap: wrap;
       margin: 0 auto;
-      padding: 40px 0;
+      padding-top: 40px;
 
       h2 {
         color: #5f5f5f;

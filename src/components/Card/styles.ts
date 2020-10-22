@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  width: 390px;
-  height: 400px;
+  width: 400px;
+  height: 200px;
   text-align: center;
 `;
