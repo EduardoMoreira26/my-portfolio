@@ -114,7 +114,7 @@ export const Content = styled.div`
   }
 
   h1 {
-    margin: 20px 0;
+    margin: 20px 10px 0 0;
     font-size: 36px;
     display: flex;
     align-items: center;
@@ -123,16 +123,15 @@ export const Content = styled.div`
 
   strong {
     color: #5f5f5f;
-    font-style: italic;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-style: italic;
   }
 
   .projects_container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     background: #1f1f1f;
@@ -156,6 +155,10 @@ export const Content = styled.div`
         width: 355px;
         background: #121214;
         transition: transform 0.2s;
+
+        h2 {
+          color: #fff;
+        }
 
         img {
           width: 345px;
@@ -201,6 +204,18 @@ export const Content = styled.div`
       flex-wrap: wrap;
       margin: 0 auto;
       padding-top: 40px;
+
+      .devicon-docker-plain,
+      .devicon-css3-plain,
+      .devicon-bootstrap-plain,
+      .devicon-express-original,
+      .devicon-html5-plain,
+      .devicon-javascript-plain,
+      .devicon-nodejs-plain,
+      .devicon-react-original,
+      .devicon-typescript-plain {
+        font-size: 100px;
+      }
 
       h2 {
         color: #5f5f5f;

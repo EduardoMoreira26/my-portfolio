@@ -37,7 +37,7 @@ const Main: React.FC = () => {
       <Content>
         <div className="intro">
           <h1>ME CONHEÇA</h1>
-          <h3>Bem vindo ao meu Pórtfolio!</h3>
+          <h3>Bem vindo ao meu Portfólio!</h3>
         </div>
 
         <h1>PROJETOS</h1>
@@ -50,7 +50,7 @@ const Main: React.FC = () => {
             <button onClick={handleModal} className="card">
               <div className="effect-closed">
                 <img src={olxcard} alt="" />
-                <strong>OLX Clone</strong>
+                <h2>OLX Clone</h2>
                 <p>ReactJs</p>
               </div>
             </button>
@@ -98,47 +98,48 @@ const Main: React.FC = () => {
 
           <div className="skills">
             <Card>
-              <img className="img_skills" src={html} alt="Html5" />
+              <i className="devicon-html5-plain colored" />
               <h2>HTML5</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={css} alt="" />
+              <i className="devicon-css3-plain colored" />
               <h2>CSS3</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={js} alt="" />
+              <i className="devicon-javascript-plain colored" />
               <h2>Javascript</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={react} alt="" />
+              <i className="devicon-react-original colored" />
               <h2>React</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={react} alt="" />
-              <h2>ReactNative</h2>
+              <i className="devicon-typescript-plain colored" />
+              <h2>Typescript</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={bootstrap} alt="" />
+              <i className="devicon-bootstrap-plain colored" />
               <h2>Bootstrap</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={node} alt="" />
+              <i className="devicon-nodejs-plain colored" />
               <h2>Node</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={bootstrap} alt="" />
+              <i className="devicon-express-original colored" />
               <h2>Express</h2>
             </Card>
 
             <Card>
-              <img className="img_skills" src={bootstrap} alt="" />
+              <i className="devicon-docker-plain colored" />
+
               <h2>Docker</h2>
             </Card>
           </div>
