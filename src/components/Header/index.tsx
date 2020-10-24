@@ -3,6 +3,8 @@
 /* eslint no-use-before-define: 0 */
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Transition } from "react-transition-group";
 
 import { Sling as Hamburger } from "hamburger-react";
 
@@ -22,7 +24,7 @@ const Header: React.FC = () => {
   return (
     <Container>
       <header>
-        <h1>Eduardo Moreira</h1>
+        <Link to="/">Eduardo Moreira</Link>
 
         <button onClick={handleButtonClick}>
           <Hamburger
@@ -36,26 +38,26 @@ const Header: React.FC = () => {
         {visible && (
           <Modal onClick={handleModalClick}>
             <ModalArea>
-              <a href="/projetos">
+              <Link to="/projetos">
                 <div>
                   <strong>Projetos</strong>
                 </div>
-              </a>
-              <a href="/cursos">
+              </Link>
+              <Link to="/cursos">
                 <div>
                   <strong>Cursos</strong>
                 </div>
-              </a>
-              <a href="/blog">
+              </Link>
+              <Link to="/blog">
                 <div>
                   <strong>Blog</strong>
                 </div>
-              </a>
-              <a href="/contato">
+              </Link>
+              <Link to="/contato">
                 <div>
                   <strong>Contato</strong>
                 </div>
-              </a>
+              </Link>
             </ModalArea>
           </Modal>
         )}

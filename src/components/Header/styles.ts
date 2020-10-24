@@ -1,6 +1,7 @@
 /* eslint no-use-before-define: 0 */
 
 import styled from "styled-components";
+import backgroundhome from "../../assets/background_home.png";
 
 export const Container = styled.header`
   padding: 20px 0;
@@ -14,6 +15,12 @@ export const Container = styled.header`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 22px;
+    }
 
     button {
       text-decoration: none;

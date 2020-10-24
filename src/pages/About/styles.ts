@@ -214,7 +214,7 @@ export const Content = styled.div`
       .devicon-nodejs-plain,
       .devicon-react-original,
       .devicon-typescript-plain {
-        font-size: 100px;
+        font-size: 6em;
       }
 
       h2 {

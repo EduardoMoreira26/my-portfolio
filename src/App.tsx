@@ -1,18 +1,18 @@
 /* eslint-disable no-use-before-define */
 
 import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import GlobalStyle from "./styles/global";
-import Main from "./pages/Main";
-import About from "./pages/About";
+
+import Routes from './routes';
 
 const App: React.FC = () => {
   return (
-    <>
-      <About />
-      {/* <Main /> */}
+    <Router>
+      <Routes />
       <GlobalStyle />
-    </>
+    </ Router>
   );
 };
 

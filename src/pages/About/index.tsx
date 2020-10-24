@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 
 import { FiXCircle } from "react-icons/fi";
+import { Transition } from "react-transition-group";
 import { Container, Content, Modal, ModalArea } from "./styles";
 
 import Header from "../../components/Header";
@@ -12,12 +13,6 @@ import Card from "../../components/Card";
 
 import olxbg2 from "../../assets/olxbg2.png";
 import olxcard from "../../assets/olxcard.png";
-import html from "../../assets/html.png";
-import css from "../../assets/css.png";
-import js from "../../assets/js.png";
-import bootstrap from "../../assets/bootstrap.png";
-import react from "../../assets/react.png";
-import node from "../../assets/node.png";
 
 const Main: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -35,10 +30,12 @@ const Main: React.FC = () => {
       <Header />
 
       <Content>
-        <div className="intro">
-          <h1>ME CONHEÇA</h1>
-          <h3>Bem vindo ao meu Portfólio!</h3>
-        </div>
+        <Transition timeout={4000} in appear>
+          <div className="intro">
+            <h1>ME CONHEÇA</h1>
+            <h3>Bem vindo ao meu Portfólio!</h3>
+          </div>
+        </Transition>
 
         <h1>PROJETOS</h1>
         <strong>
