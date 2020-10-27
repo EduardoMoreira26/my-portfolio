@@ -228,4 +228,58 @@ export const Content = styled.div`
       }
     }
   }
+
+  .contact_container {
+    background: #1f1f1f;
+    margin-top: 20px;
+    padding: 60px 0;
+
+    .container_card {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .contact_card {
+        border: 1px solid #fff;
+        height: 200px;
+        width: 360px;
+        text-align: center;
+        padding: 40px 0;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #121214;
+        background: #121214;
+        box-shadow: 0 0 0 2px #000;
+
+        h2::after {
+          content: "";
+          display: block;
+          background: #fff;
+          height: 3px;
+          width: 20px;
+          margin: 8px auto;
+        }
+
+        a {
+          text-decoration: none;
+          color: #5f5f5f;
+
+          .devicon-github-plain,
+          .devicon-linkedin-plain {
+            font-size: 3em;
+            transition: color 0.2s;
+            margin-right: 10px;
+            color: #81c043;
+
+            &:hover {
+              color: #81c033;
+            }
+          }
+        }
+      }
+    }
+  }
 `;

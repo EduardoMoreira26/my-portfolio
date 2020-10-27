@@ -3,7 +3,7 @@
 /* eslint no-use-before-define: 0 */
 import React, { useState } from "react";
 
-import { FiXCircle } from "react-icons/fi";
+import { FiXCircle, FiLinkedin, FiGithub } from "react-icons/fi";
 import { Transition } from "react-transition-group";
 import { Container, Content, Modal, ModalArea } from "./styles";
 
@@ -139,6 +139,35 @@ const Main: React.FC = () => {
 
               <h2>Docker</h2>
             </Card>
+          </div>
+        </section>
+
+        <h1>CONTATO</h1>
+        <section className="contact_container">
+          <div className="container_card">
+            <div className="contact_card">
+              <h2>Telefone</h2> <br />
+              <a href="tel:+351934854234">934854234</a>
+            </div>
+
+            <div className="contact_card">
+              <h2>Email</h2> <br /> <strong>du_du.mba@hotmail.com</strong>
+            </div>
+
+            <div className="contact_card">
+              <h2>Redes Sociais</h2>
+              <br />
+              <a
+                href="https://www.linkedin.com/in/eduardo-moreira-944413151/"
+                target="blank"
+              >
+                <i className="devicon-linkedin-plain colored" />
+              </a>
+
+              <a href="https://github.com/EduardoMoreira26" target="blank">
+                <i className="devicon-github-plain colored" />
+              </a>
+            </div>
           </div>
         </section>
       </Content>

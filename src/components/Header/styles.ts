@@ -4,9 +4,13 @@ import styled from "styled-components";
 import backgroundhome from "../../assets/background_home.png";
 
 export const Container = styled.header`
-  padding: 20px 0;
-  /* position: fixed; */
-  /* width: 100%; */
+  padding: 20px 10px;
+  background: #121214;
+
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
 
   header {
     max-width: 1200px;
