@@ -283,3 +283,16 @@ export const Content = styled.div`
     }
   }
 `;
+
+export const CardCursos = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+`;

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 import { FiXCircle, FiLinkedin, FiGithub } from "react-icons/fi";
 import { Transition } from "react-transition-group";
-import { Container, Content, Modal, ModalArea } from "./styles";
+import { Container, Content, Modal, ModalArea, CardCursos } from "./styles";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -13,6 +13,7 @@ import Card from "../../components/Card";
 
 import olxbg2 from "../../assets/olxbg2.png";
 import olxcard from "../../assets/olxcard.png";
+import origamid from "../../assets/origamid.png";
 
 const Main: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -140,6 +141,27 @@ const Main: React.FC = () => {
               <h2>Docker</h2>
             </Card>
           </div>
+        </section>
+
+        <h1>CURSOS</h1>
+        <section className="projects_container">
+          <CardCursos>
+            <img src={origamid} alt="Origamid" />
+            <div>
+              <h2>
+                2020 <br />
+                Origamid
+              </h2>
+              <p>
+                Web Design - 22 horas. <br />
+                CSS Avançado Posicionamento - 9 horas. <br />
+                CSS Flexbox - 3 horas. <br />
+                CSS Grid Layout - 5 horas. <br />
+                CSS com SASS - 6 horas. <br />
+                Javascript - 37 horas.
+              </p>
+            </div>
+          </CardCursos>
         </section>
 
         <h1>CONTATO</h1>

@@ -10,6 +10,6 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   height: 100vh;
-  background: url(${backgroundhome}) no-repeat center;
-  background-size: cover;
+  /* background: url(${backgroundhome}) no-repeat center;
+  background-size: cover; */
 `;
