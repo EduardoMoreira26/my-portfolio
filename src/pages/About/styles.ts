@@ -282,6 +282,11 @@ export const Content = styled.div`
       }
     }
   }
+
+  .section_cursos {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const CardCursos = styled.div`
@@ -289,10 +294,21 @@ export const CardCursos = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
+
+  .infoCursos {
+    width: 400px;
+  }
+
   img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-right: 40px;
+  }
+
+  h2 {
+    color: #5f5f5f;
+    margin-bottom: 20px;
   }
 `;
