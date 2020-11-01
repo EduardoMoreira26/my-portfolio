@@ -112,6 +112,10 @@ export const Content = styled.div`
     cursor: pointer;
   }
 
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+
   .img_skills {
     height: 120px;
     width: 120px;
@@ -129,6 +133,16 @@ export const Content = styled.div`
       margin-top: 10px;
       font-size: 66px;
       text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      height: 400px;
+      padding-top: 150px;
+
+      h1 {
+        margin-top: 0;
+        font-size: 48px;
+      }
     }
   }
 
@@ -201,6 +215,13 @@ export const Content = styled.div`
           font-size: 18px;
           font-weight: 500;
         }
+      }
+    }
+    @media (max-width: 700px) {
+      margin: 20px;
+
+      .background-card {
+        margin: 0 auto;
       }
     }
   }

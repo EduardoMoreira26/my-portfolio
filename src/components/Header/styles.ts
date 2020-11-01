@@ -60,6 +60,7 @@ export const ModalArea = styled.div`
   a {
     text-decoration: none;
     color: #fff;
+    font-size: 6px;
 
     transition: transform 0.2s;
 
@@ -90,6 +91,12 @@ export const ModalArea = styled.div`
         &:hover {
           color: #81c043;
         }
+      }
+    }
+    @media (max-width: 700px) {
+      div {
+        height: 100px;
+        width: 200px;
       }
     }
   }
