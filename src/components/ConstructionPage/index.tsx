@@ -3,19 +3,12 @@
 import React from "react";
 
 import { Container, Content } from "./styles";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import PageConstruction from "../../components/ConstructionPage";
 
 const Contact: React.FC = () => (
   <Container>
-    <Header />
-
     <Content>
-      <PageConstruction />
+      <h1>Página em Construção...</h1>
     </Content>
-
-    <Footer />
   </Container>
 );
 

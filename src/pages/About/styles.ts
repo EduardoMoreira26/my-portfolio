@@ -86,6 +86,25 @@ export const ModalArea = styled.div`
       border-radius: 2px;
     }
   }
+
+  @media (max-width: 700px) {
+    width: 400px;
+
+    p {
+      line-height: 20px;
+      font-size: 14px;
+    }
+
+    .imgs {
+      img {
+        width: 400px;
+        height: 300px;
+      }
+    }
+    .description {
+      width: 300px;
+    }
+  }
 `;
 
 export const Content = styled.div`

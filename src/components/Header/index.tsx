@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         {visible && (
           <Modal onClick={handleModalClick}>
             <ModalArea>
-              <Link to="/projetos">
+              <Link to="/">
                 <div>
                   <strong>Projetos</strong>
                 </div>
