@@ -326,6 +326,7 @@ export const Content = styled.div`
   .section_cursos {
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
   }
 `;
 
@@ -335,9 +336,25 @@ export const CardCursos = styled.div`
   justify-content: center;
   align-items: center;
   margin: 20px auto;
+  height: 300px;
+  border-radius: 5px;
+  background: #121214;
+  border: 3px solid #000; 
+
+  &:nth-child(-n+4):after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 40px;
+    background: #000;
+    margin-top: 340px;
+    position: absolute;
+  }
+
 
   .infoCursos {
     width: 400px;
+    
   }
 
   img {
@@ -345,10 +362,13 @@ export const CardCursos = styled.div`
     height: 150px;
     border-radius: 50%;
     margin-right: 40px;
+    padding-left: 10px;
   }
 
   h2 {
     color: #5f5f5f;
     margin-bottom: 20px;
   }
+
+  
 `;

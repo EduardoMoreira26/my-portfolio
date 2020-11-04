@@ -4,7 +4,6 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Transition } from "react-transition-group";
 
 import { Sling as Hamburger } from "hamburger-react";
 
@@ -43,16 +42,18 @@ const Header: React.FC = () => {
                   <strong>Projetos</strong>
                 </div>
               </Link>
-              <Link to="/cursos">
-                <div>
+              {/* <Link to="/cursos">
+                <div className="embreve">
                   <strong>Cursos</strong>
+                  <br />
+                  <p>Em breve</p>
                 </div>
-              </Link>
-              <Link to="/blog">
+              </Link> */}
+              {/* <Link to="/blog">
                 <div>
                   <strong>Blog</strong>
                 </div>
-              </Link>
+              </Link> */}
               <Link to="/contato">
                 <div>
                   <strong>Contato</strong>
